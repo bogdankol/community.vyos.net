@@ -1,191 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>VyOS Community</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="/styles/trustpilot.css">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="header__inner">
-          <div class="header__logo-side">
-            <a class="header__logo" href="/">
-              <img src="/img/header/vyos-logo.svg" alt="VyOS Community" title="VyOS Community">
-            </a>
-            <div class="header__text">
-              <p>Open-source router and firewall platform</p>
-            </div>
-          </div>
-          <div class="header__links-side">
-            <a href="/get">GET VYOS</a>
-            <a href="/contribute">CONTRIBUTE</a>
-            <a href="http://vyos.io">COMMERCIAL SERVICES</a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="container small" id="content">
-        <!-- content is automatically inserted here -->
-      </div>
-    </main>
-    <footer>
+	<head>
+		<meta charset="UTF-8" />
+		<title>VyOS Community</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/img/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/img/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/img/favicon/favicon-16x16.png"
+		/>
+		<link
+			rel="manifest"
+			href="/img/favicon/site.webmanifest"
+		/>
+		<link
+			rel="mask-icon"
+			href="/img/favicon/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<meta
+			name="msapplication-TileColor"
+			content="#da532c"
+		/>
+		<meta
+			name="theme-color"
+			content="#ffffff"
+		/>
+		<link
+			rel="stylesheet"
+			href="/main.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="/styles/trustpilot.css"
+		/>
+	</head>
+	<body>
+		<header id="header">
+			<div
+				class="container navigation"
+				id="navigation"
+			>
+				<div class="containerCustom">
+					<div class="header__inner">
+						<div class="header__logo-side">
+							<a
+								class="header__logo"
+								href="/"
+							>
+								<img
+									src="/img/header/vyos-logo.svg"
+									alt="VyOS Community"
+									title="VyOS Community"
+								/>
+							</a>
+							<p>Open-source router and firewall platform</p>
+						</div>
+						<div class="header__links-side">
+							<a href="/get">GET VYOS</a>
+							<a href="/contribute">CONTRIBUTE</a>
+							<a href="http://vyos.io">COMMERCIAL SERVICES</a>
+							<a href="tel:+13234882459">
+								<img
+									src="/img/header/tel-icon.svg"
+									alt="tel"
+									title="tel"
+								/>
+								<span>+1 323 488 2459</span>
+							</a>
+						</div>
 
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__logo-society">
-            <div class="footer__logo-vyos">
-              <a href="https://sentrium.io/" target="_blank" class="footer__logo--vyos">
-                <img src="/img/footer/vyos-logo.svg" alt="VyOS Community" title="VyOS Community">
-              </a>
-            </div>
-            <div class="footer__hr">
-              <img src="/img/footer/line.svg">
-            </div>
-            <div class="footer__socials">
-              <a href="https://twitter.com/vyos_dev" target="_blank">
-                <img src="/img/social-networks/twitter.svg" alt="VyOS on Twitter" title="VyOS on Twitter">
-              </a>
-              <a href="https://www.linkedin.com/company/vyos/" target="_blank">
-                <img src="/img/social-networks/linkedin.svg" alt="VyOS on Linkedin" title="VyOS on Linkedin">
-              </a>
-              <a href="https://www.facebook.com/vyosofficial/" target="_blank">
-                <img src="/img/social-networks/facebook.svg" alt="VyOS on Facebook" title="VyOS on Facebook">
-              </a>
-              <a href="https://www.reddit.com/r/vyos/" target="_blank">
-                <img src="/img/social-networks/reddit.svg" alt="VyOS on Reddit" title="VyOS on Reddit">
-              </a>
-            </div>
-          </div>
+						<div class="mobile-menu-div">
+							<div class="upper-part">
+								<a
+									href="tel:+13234882459"
+									class="tel-link"
+								>
+									<img
+										src="/img/header/tel-icon.svg"
+										alt="tel"
+										title="tel"
+									/>
+								</a>
+								<img
+									src="/img/header/hamburger-menu-icon.svg"
+									id="burgerMenu"
+									class="visible"
+								/>
+								<img
+									src="/img/header/close-icon.svg"
+									id="closeIcon"
+									class="not__visible"
+								/>
+							</div>
 
-          <div class="footer__links-trustpilot">
-            <div class="footer__links">
-              <div class="footer__column">
-                <h3>Get VyOS</h3>
-                <ul>
-                  <li><a href="/get/nightly-builds">Nightly builds</a></li>
-                  <li><a href="/get/contributor-subscriptions">LTS release for contributors</a></li>
-                </ul>
-              </div>
-              <div class="footer__column">
-                <h3>Contribute</h3>
-                <ul>
-                  <li><a href="/contribute">Introduction</a></li>
-                  <li><a href="https://github.com/vyos">Code on GitHub</a></li>
-                  <li><a href="https://phabricator.vyos.net/maniphest">Open tasks</a></li>
-                </ul>
-              </div>
-              <div class="footer__column">
-                <h3>Report a Bug</h3>
-                <ul>
-                  <li><a href="https://phabricator.vyos.net/">Bug Tracker</a></li>
-                </ul>
-              </div>
-              <div class="footer__column">
-                <h3>Commercial Services</h3>
-                <ul>
-                  <li><a href="https://vyos.io/subscriptions/support/">Commercial support</a></li>
-                  <li><a href="https://vyos.io/subscriptions/software/">LTS release subscriptions</a></li>
-                  <li><a href="http://vyos.io/contact-us/">Custom development and consulting</a></li>
-                </ul>
-              </div>
-            </div>
-            <div id="trustpilot-widget" class="footer__trustpilot">
-              <!-- inserted by widgets.insert-trustpilot-widget -->
-            </div>
-          </div>
+							<div
+								class="bottom-part not__visible"
+								id="bottomPartOfBurgerMenu"
+							>
+								<div class="bottom-menu">
+									<a href="/get">GET VYOS</a>
+									<a href="/contribute">CONTRIBUTE</a>
+									<a href="http://vyos.io">COMMERCIAL SERVICES</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div
+				class="container"
+				id="content"
+			>
+				<!-- content is automatically inserted here -->
+			</div>
+		</main>
+		<footer>
+			<div class="containerCustom">
+				<div class="footer__inner">
+					<div class="footer-div-top">
+						<div class="sentrium-column">
+							<div>
+								<img
+									src="/img/footer/sentrium.svg"
+									alt="VyOS Community"
+									title="VyOS Community"
+								/>
 
-          <div class="footer__developer">
-            <div class="footer__rights">
-              <p>© 2021 VyOS maintainers and contributors.</p>
-              <a href='https://www.vyos.io/privacy-policy'>Privacy Policy</a>
-              <a href='https://www.vyos.io/terms-and-conditions'>Terms & Conditions</a>
-            </div>
-            <div class="footer__sentrium-logo">
-              <a href="https://sentrium.io/" target="_blank" class="footer__logo">
-                <img src="/img/footer/sentrium.svg" alt="Sentrium" title="Sentrium">
-              </a>
-            </div>
-          </div>
+								<p>Digital transformation of your business with Sentrium</p>
+							</div>
 
-          <div class="footer__sm">
-            <div class="footer__sm__contant">
+							<a
+								href="https://sentrium.io/"
+								target="_blank"
+								>Visit Sentrium</a
+							>
+						</div>
 
-              <div class="footer__sm__logos">
-                <a href="/" class="footer__logo">
-                  <img src="/img/footer/vyos-logo-sm.svg" alt="VyOS Community" title="VyOS Community">
-                </a>
-                <a href="https://www.packet.com/" class="footer__logo" target="_blank">
-                  <img src="/img/footer/packet-logo-sm.svg" alt="Packet" title="Packet">
-                </a>
-                <a href="https://sentrium.io/" target="_blank" class="footer__logo">
-                  <img src="/img/footer/sentrium-logo-sm.svg" alt="Sentrium" title="Sentrium">
-                </a>
-              </div>
+						<div class="footer__links">
+							<div class="footer__column">
+								<h3>Get VyOS</h3>
+								<ul>
+									<li><a href="/get/nightly-builds">Nightly builds</a></li>
+									<li>
+										<a href="/get/contributor-subscriptions"
+											>LTS release for contributors</a
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__column">
+								<h3>Contribute</h3>
+								<ul>
+									<li><a href="/contribute">Introduction</a></li>
+									<li><a href="https://github.com/vyos">Code on GitHub</a></li>
+									<li>
+										<a href="https://phabricator.vyos.net/maniphest"
+											>Open tasks</a
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__column">
+								<h3>Report a Bug</h3>
+								<ul>
+									<li>
+										<a href="https://phabricator.vyos.net/">Bug Tracker</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__column">
+								<h3>Commercial Services</h3>
+								<ul>
+									<li>
+										<a href="https://vyos.io/subscriptions/support/"
+											>Commercial support</a
+										>
+									</li>
+									<li>
+										<a href="https://vyos.io/subscriptions/software/"
+											>LTS release subscriptions</a
+										>
+									</li>
+									<li>
+										<a href="http://vyos.io/contact-us/"
+											>Custom development and consulting</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-              <div class="footer__sm__society">
-                <a href="https://twitter.com/vyos_dev" target="_blank" class="footer__logo">
-                  <img src="/img/social-networks/twitter-sm.svg" alt="VyOS on Twitter" title="VyOS on Twitter">
-                </a>
-                <a href="https://www.linkedin.com/company/vyos/" target="_blank" class="footer__logo">
-                  <img src="/img/social-networks/linkedin-sm.svg" alt="VyOS on Linkedin" title="VyOS on Linkedin">
-                </a>
-                <a href="https://www.facebook.com/vyosofficial/" target="_blank" class="footer__logo">
-                  <img src="/img/social-networks/facebook-sm.svg" alt="VyOS on Facebook" title="VyOS on Facebook">
-                </a>
-                <a href="https://www.reddit.com/r/vyos/" target="_blank" class="footer__logo">
-                  <img src="/img/social-networks/reddit-sm.svg" alt="VyOS on Reddit" title="VyOS on Reddit">
-                </a>
-              </div>
+					<!-- <div class="footer__logo-society">
+						
+						
+						<div class="footer__socials">
+							<a
+								href="https://twitter.com/vyos_dev"
+								target="_blank"
+							>
+								<img
+									src="/img/social-networks/twitter.svg"
+									alt="VyOS on Twitter"
+									title="VyOS on Twitter"
+								/>
+							</a>
+							<a
+								href="https://www.linkedin.com/company/vyos/"
+								target="_blank"
+							>
+								<img
+									src="/img/social-networks/linkedin.svg"
+									alt="VyOS on Linkedin"
+									title="VyOS on Linkedin"
+								/>
+							</a>
+							<a
+								href="https://www.facebook.com/vyosofficial/"
+								target="_blank"
+							>
+								<img
+									src="/img/social-networks/facebook.svg"
+									alt="VyOS on Facebook"
+									title="VyOS on Facebook"
+								/>
+							</a>
+							<a
+								href="https://www.reddit.com/r/vyos/"
+								target="_blank"
+							>
+								<img
+									src="/img/social-networks/reddit.svg"
+									alt="VyOS on Reddit"
+									title="VyOS on Reddit"
+								/>
+							</a>
+						</div>
+					</div> -->
 
-              <div class="footer__sm__developer">
-                <div class="footer__sm__privacy-policy">
-                  <a href='https://www.vyos.io/privacy-policy'>Privacy Policy</a>
-                  <a href='https://www.vyos.io/terms-and-conditions'>Terms & Conditions</a>
-                </div>
-                <div class="footer__sm__rights">
-                  <p>© 2022 VyOS maintainers and contributors.</p>
-                </div>
-              </div>
+					<div class="footer__developer">
+						<div class="footer__rights">
+							<p>© 2024 vyos.io All rights reserved.</p>
+						</div>
+						<div class="footer__sentrium-logo">
+							<a
+								href="https://sentrium.io/"
+								target="_blank"
+								class="footer__logo"
+							>
+								<img
+									src="/img/footer/sentrium.svg"
+									alt="Sentrium"
+									title="Sentrium"
+								/>
+							</a>
+						</div>
+					</div>
 
-            </div>
-          </div>
+					<!-- not pc version of footer -->
+					<div class="footer__sm">
+						<div class="footer__sm__contant">
+							<div class="footer__sm__logos">
+								<a
+									href="/"
+									class="footer__logo"
+								>
+									<img
+										src="/img/footer/vyos-logo-sm.svg"
+										alt="VyOS Community"
+										title="VyOS Community"
+									/>
+								</a>
+								<a
+									href="https://www.packet.com/"
+									class="footer__logo"
+									target="_blank"
+								>
+									<img
+										src="/img/footer/packet-logo-sm.svg"
+										alt="Packet"
+										title="Packet"
+									/>
+								</a>
+								<a
+									href="https://sentrium.io/"
+									target="_blank"
+									class="footer__logo"
+								>
+									<img
+										src="/img/footer/sentrium-logo-sm.svg"
+										alt="Sentrium"
+										title="Sentrium"
+									/>
+								</a>
+							</div>
 
-        </div>
-      </div>
-    </footer>
+							<div class="footer__sm__society">
+								<a
+									href="https://twitter.com/vyos_dev"
+									target="_blank"
+									class="footer__logo"
+								>
+									<img
+										src="/img/social-networks/twitter-sm.svg"
+										alt="VyOS on Twitter"
+										title="VyOS on Twitter"
+									/>
+								</a>
+								<a
+									href="https://www.linkedin.com/company/vyos/"
+									target="_blank"
+									class="footer__logo"
+								>
+									<img
+										src="/img/social-networks/linkedin-sm.svg"
+										alt="VyOS on Linkedin"
+										title="VyOS on Linkedin"
+									/>
+								</a>
+								<a
+									href="https://www.facebook.com/vyosofficial/"
+									target="_blank"
+									class="footer__logo"
+								>
+									<img
+										src="/img/social-networks/facebook-sm.svg"
+										alt="VyOS on Facebook"
+										title="VyOS on Facebook"
+									/>
+								</a>
+								<a
+									href="https://www.reddit.com/r/vyos/"
+									target="_blank"
+									class="footer__logo"
+								>
+									<img
+										src="/img/social-networks/reddit-sm.svg"
+										alt="VyOS on Reddit"
+										title="VyOS on Reddit"
+									/>
+								</a>
+							</div>
 
-    <aside class="google-analytics-message" id="google-analytics-message">
-      <div class="container">
-        <div class="google-analytics-message__content">
-          <div class="google-analytics-message__content__img">
-            <img src="/img/global/cookies.svg" alt="Cookies">
-          </div>
-          <div class="google-analytics-message__content__text">
-            <p>We use Google Analytics to get analytics and metrics about our visitors on our website. This helps us to
-              improve the quality of the content and the usability of the site.
-              The collected information is not shared with third parties. Google Analytics stores cookies on your computer.</p>
-            <p>If you decline, your information won’t be tracked when you visit this website. A single cookie will be used
-              in your browser to remember your preference not to be tracked.</p>
-          </div>
-        </div>
-        <div class="google-analytics-message__buttons">
-          <button class="google-analytics-message__buttons__accept" id="google-analytics-message-accept">Accept</button>
-          <button class="google-analytics-message__buttons__decline" id="google-analytics-message-decline">Decline</button>
-        </div>
-      </div>
-    </aside>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J3WHFQG00P"></script>
-    <script src="/js/google-analytics-message.js"></script>
-  </body>
+							<div class="footer__sm__developer">
+								<div class="footer__sm__privacy-policy">
+									<a href="https://www.vyos.io/privacy-policy"
+										>Privacy Policy</a
+									>
+									<a href="https://www.vyos.io/terms-and-conditions"
+										>Terms & Conditions</a
+									>
+								</div>
+								<div class="footer__sm__rights">
+									<p>© 2022 VyOS maintainers and contributors.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<aside
+			class="google-analytics-message"
+			id="google-analytics-message"
+		>
+			<div class="container">
+				<div class="google-analytics-message__content">
+					<div class="google-analytics-message__content__img">
+						<img
+							src="/img/global/cookies.svg"
+							alt="Cookies"
+						/>
+					</div>
+					<div class="google-analytics-message__content__text">
+						<p>
+							We use Google Analytics to get analytics and metrics about our
+							visitors on our website. This helps us to improve the quality of
+							the content and the usability of the site. The collected
+							information is not shared with third parties. Google Analytics
+							stores cookies on your computer.
+						</p>
+						<p>
+							If you decline, your information won’t be tracked when you visit
+							this website. A single cookie will be used in your browser to
+							remember your preference not to be tracked.
+						</p>
+					</div>
+				</div>
+				<div class="google-analytics-message__buttons">
+					<button
+						class="google-analytics-message__buttons__accept"
+						id="google-analytics-message-accept"
+					>
+						Accept
+					</button>
+					<button
+						class="google-analytics-message__buttons__decline"
+						id="google-analytics-message-decline"
+					>
+						Decline
+					</button>
+				</div>
+			</div>
+		</aside>
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-J3WHFQG00P"
+		></script>
+		<script src="/js/google-analytics-message.js"></script>
+		<script src="/js/burger-manu-click-handler.js"></script>
+		<script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
+		<script src="/js/rive-animations.js"></script>
+		<script src="/js/scroll-detector-for-header.js"></script>
+	</body>
 </html>

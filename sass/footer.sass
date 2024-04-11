@@ -1,8 +1,89 @@
 @import settings.sass
-  
+
 footer
+  display: flex
+  justify-content: center
+
   div.footer__inner
-    
+    width: 100%
+
+    .footer-div-top
+      +resolution(992)
+        display: grid
+        grid-template-columns: auto 1fr
+
+      .sentrium-column
+        display: flex
+
+        +resolution(0, 575)
+          flex-direction: column
+          align-items: center
+        +resolution(0, 991)
+          width: 100%
+          justify-content: space-between
+          align-items: center
+        +resolution(992)
+          max-width: 227px
+          margin-right: 70px
+          flex-direction: column
+
+        div
+          display: flex
+          +resolution(0, 575)
+            flex-direction: column
+          +resolution(0, 991)
+            align-items: center
+          +resolution(992)
+            flex-direction: column
+            
+
+          img
+            width: 66px
+            height: 46px
+
+          p
+            font-family: 'Archivo', sans-serif
+            color: #525659
+            font-weight: 600
+            letter-spacing: -0.5px
+
+            +resolution(992)
+              margin-top: 24px
+            +resolution(576)
+              font-size: 18px
+            +resolution(576, 991)
+              width: 100%
+              max-width: 258px
+            +resolution(0, 991)
+              margin-left: 20px
+            +resolution(0, 575)
+              font-size: 16px
+              margin-top: 14px
+
+        a
+          background-color: #121010
+          color: #fff
+          font-family: 'Archivo', sans-serif
+          letter-spacing: -0.02em
+          font-weight: 700
+          font-size: 14px
+          width: 140px
+          display: flex
+          justify-content: center
+          align-items: center
+          text-decoration: none
+          border-radius: 4px
+          height: 40px
+          +resolution(992)
+            margin-top: 40px
+          +resolution(0, 575)
+            margin-top: 16px
+
+          &:hover
+            background-color: #525659
+          &:active
+            background-color: #FFF
+
     div.footer__logo-society
       display: grid
       grid-template-columns: 60px 1fr 191px
@@ -23,81 +104,67 @@ footer
         align-items: center
         padding-left: 6px
 
-    div.footer__links-trustpilot
-      display: flex
-      justify-content: space-between
-      margin-top: 36px
-      +resp(sm)
+    div.footer__links
+      +resolution(0, 991)
         display: none
+      +resolution(992)
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
 
-      div.footer__links
-        display: flex
-        +resp(md)
-          flex-wrap: wrap
-
-        div.footer__column
-          display: grid
-          grid-template-rows: auto 1fr
-          margin-right: 48px
-          +resp(lg)
-            margin-right: 28px
-          +resp(md)
-            margin: 0 0 30px
-            grid-template-rows: 34px 1fr
-          &:nth-child(1)
-            +resp(lg)
-              width: 16%
-            +resp(md)
-              width: 40%
-          &:nth-child(2)
-            +resp(lg)
-              width: 18%
-            +resp(md)
-              width: 60%
-          &:nth-child(3)
-            +resp(lg)
-              width: 20%
-            +resp(md)
-              width: 40%
-          &:nth-child(4)
-            margin-right: 0
-            +resp(lg)
-              width: 32%
-            +resp(md)
-              width: 60%
-
-          h3
-            font-weight: 600
-            font-size: 18px
-            padding: 0 0 17px 0
-            color: $black
-
-          ul
-            padding-left: 0
-            list-style: none
-            li
-              padding: 5px 0
-              a
-                list-style: none
-                font-weight: normal
-                font-size: 16px
-                line-height: 1.7
-                color: #747577
-                text-decoration: none
-                +resp(md)
-                  font-size: 14px
-                &:hover
-                  color: $orange
-                  text-decoration: underline
-
-      div.footer__trustpilot
-        justify-self: end
-        border-left: 1px solid #E0DFDF
-        padding-left: 33px
+      div.footer__column
+        display: grid
+        grid-template-rows: auto 1fr
+        margin-right: 48px
         +resp(lg)
-          padding-left: 10px
-        div#tp-widget-wrapper
-          margin: 0
+          margin-right: 28px
+        +resp(md)
+          margin: 0 0 30px
+          grid-template-rows: 34px 1fr
+        &:nth-child(1)
+          +resp(lg)
+            width: 16%
+          +resp(md)
+            width: 40%
+        &:nth-child(2)
+          +resp(lg)
+            width: 18%
+          +resp(md)
+            width: 60%
+        &:nth-child(3)
+          +resp(lg)
+            width: 20%
+          +resp(md)
+            width: 40%
+        &:nth-child(4)
+          margin-right: 0
+          +resp(lg)
+            width: 32%
+          +resp(md)
+            width: 60%
+
+        h3
+          font-weight: 600
+          font-size: 18px
+          padding: 0 0 17px 0
+          color: $black
+
+        ul
+          padding-left: 0
+          list-style: none
+          li
+            padding: 5px 0
+            a
+              list-style: none
+              font-weight: normal
+              font-size: 16px
+              line-height: 1.7
+              color: #747577
+              text-decoration: none
+              +resp(md)
+                font-size: 14px
+              &:hover
+                color: $orange
+                text-decoration: underline
 
     div.footer__developer
       border-top: 1px solid #E0DFDF
@@ -141,9 +208,9 @@ footer
       display: none
       +resp(sm)
         display: block
-      
+
       div.footer__sm__contant
-        border-top: 1px solid #ACACAD
+        border-top: 11px solid red
         padding: 32px 0 23px
         div.footer__sm__logos
           display: flex

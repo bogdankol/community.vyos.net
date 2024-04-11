@@ -1,8 +1,8 @@
 // colors
-$white : #ffffff
-$orange : #FFBE12
-$black : #18191C
-$grey : #747577
+$white: #ffffff
+$orange: #FFBE12
+$black: #18191C
+$grey: #747577
 $dark-orange: #FD8F01
 $form-fields: #666666
 
@@ -39,4 +39,14 @@ $form-fields: #666666
 	// 375px and down
 	@if $media == xsm
 		@media only screen and (max-width: 375px)
+			@content
+
+@mixin resolution($minSize, $maxSize: false)
+
+	@if $minSize and $maxSize
+		@media only screen and (min-width: $minSize + 'px') and (max-width: $maxSize + 'px')
+			@content
+
+	@else
+		@media only screen and (min-width: $minSize + 'px')
 			@content

@@ -43,10 +43,6 @@
   action = "insert_before"
 
 # Inserts the banner in main page only
-[widgets.insert-trustpilot-widget]
-  widget = "include"
-  file = "templates/trustpilot.html"
-  selector = "#trustpilot-widget"
 
 [widgets.insert-google-tag-manager-head]
   widget = "insert_html"
