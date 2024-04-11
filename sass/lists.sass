@@ -1,0 +1,59 @@
+@import settings
+
+ul
+  list-style: none
+  padding-left: 0
+  margin-top: 16px
+
+  li
+    position: relative
+    padding-left: 25px
+    font-weight: 500
+    color: $grey-dark
+    letter-spacing: $px
+    +resolution(0, 575)
+      font-size: 16px
+    +resolution(576)
+      font-size: 18px
+
+    &:not(&:last-child)
+      margin-bottom: 10px
+
+    &:before
+      position: absolute
+      left: 10px
+      content: ''
+      display: flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      width: 5px
+      height: 5px
+      background-color: $grey-dark
+
+.nightly-builds,
+.lts,
+.legacy-lts,
+.why-contribute,
+.start,
+.image-signatures
+  ul
+    li
+      &:before
+        top: 50%
+        transform: translate(-50%, -50%)
+
+.guidelines
+  ul
+    li
+      &:before
+        top: 10px
+        transform: translateX(-50%)
+
+.links-columns
+  ul
+    li
+      padding-left: 0
+      
+      &:before
+        content: none
