@@ -2,8 +2,8 @@
 
 .bottom-text
   text-align: center
-  display: flex 
-  justify-content: center 
+  display: flex
+  justify-content: center
   +resolution(992)
     padding: 144px 0
   +resolution(576, 991)
@@ -11,21 +11,21 @@
   +resolution(0, 575)
     padding: 64px 0
 
-  div 
-    display: flex 
+  div
+    display: flex
     flex-direction: column
 
   h2
-    letter-spacing: -0.02em
-    color: #121010
+    letter-spacing: $em
+    color: $black
     +resolution(576)
       font-size: 34px
     +resolution(0, 575)
       font-size: 22px
   p
-    letter-spacing: -0.5px
+    letter-spacing: $px
     font-weight: 500
-    color: #18191C
+    color: $black2
     +resolution(576)
       font-size: 18px
       margin-top: 24px

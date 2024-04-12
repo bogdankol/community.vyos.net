@@ -3,7 +3,6 @@ document.addEventListener('click', (e) => {
 	const closeBurgerMenuIcon = document.getElementById('closeIcon')
 	const bottomPartBurgerMenu = document.getElementById('bottomPartOfBurgerMenu')
 	const navigation = document.getElementById('navigation')
-	const bannerInnerDiv = document.querySelector('.innerDiv')
 
 	function openBurgerMenu() {
 		burgerMenuIcon.classList.remove('visible')
@@ -28,7 +27,6 @@ document.addEventListener('click', (e) => {
 		bottomPartBurgerMenu.classList.remove('visible')
 		bottomPartBurgerMenu.classList.add('not__visible')
 
-    navigation.classList.remove('background__white')
 	}
 
 	if (e.target?.id === 'burgerMenu') {

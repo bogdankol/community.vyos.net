@@ -17,7 +17,7 @@ section.inform-columns
         position: absolute
         top: 0
         left: 0
-        background-color: white
+        background-color: $white
         clip-path: polygon(0 0, 0 100%, 100% 0)
         +resolution(576)
           width: 40px
@@ -31,7 +31,7 @@ section.inform-columns
         position: absolute
         bottom: 0
         right: 0
-        background-color: white
+        background-color: $white
         clip-path: polygon(100% 100%, 0 100%, 100% 0)
         +resolution(576, 992)
           width: 40px
@@ -46,7 +46,7 @@ section.inform-columns
         position: absolute
         top: 0
         left: 0
-        background-color: white
+        background-color: $white
         clip-path: polygon(0 0, 0 100%, 100% 0)
         +resolution(576)
           width: 40px
@@ -60,7 +60,7 @@ section.inform-columns
         position: absolute
         bottom: 0
         right: 0
-        background-color: white
+        background-color: $white
         clip-path: polygon(100% 100%, 0 100%, 100% 0)
         +resolution(576)
           width: 40px
@@ -70,7 +70,7 @@ section.inform-columns
           height: 20px
 
     div.inform-column__item
-      background: #F6F7F7
+      background: $light
       position: relative
       display: grid
       grid-template-rows: auto 1fr auto
@@ -86,8 +86,8 @@ section.inform-columns
         div.inform-column__title
           h3
             font-weight: bold
-            letter-spacing: -0.02em
-            color: #121010
+            letter-spacing: $em
+            color: $black
             margin-top: 16px
             +resolution(992)
               font-size: 24px
@@ -113,14 +113,14 @@ section.inform-columns
       a
         max-width: 291px
         min-height: 58px
-        color: #121010 !important
+        color: $black !important
         display: flex
         align-items: center
         font-weight: 700
         font-size: 16px
         text-decoration: none
         transition: 0.3s
-        letter-spacing: -0.02em
+        letter-spacing: $em
 
         &::after
           content: url('/img/global/link-arrow.svg')
@@ -128,7 +128,9 @@ section.inform-columns
           margin-left: 15px
           align-items: center
           padding-top: 5px
+
         &:hover
-          color: #FFAE12 !important
+          color: $secondary !important
+
         &:active
-          color: #FD8F01 !important
+          color: $primary !important

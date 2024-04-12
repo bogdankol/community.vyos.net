@@ -12,19 +12,19 @@
 @import front-page/canvas.sass
 
 body
-  font-family: 'Roboto', sans-serif
+  font-family: $r
   margin: 0
   color: $black
 
-h1, h1,h3, h4, h5, h6 
-  font-family: 'Archivo', sans-serif
+h1, h1,h3, h4, h5, h6
+  font-family: $a
 
 h1, h2, h3, h4, h5, p, ul, li
   margin: 0
 
 h1
   line-height: 120%
-  letter-spacing: -0.02em
+  letter-spacing: $em
   color: $black
   +resolution(992)
     font-size: 48px
@@ -82,6 +82,6 @@ pre, code, sample
           margin-top: 2px
 
   a
-    color: $dark-orange
+    color: $primary
     &:hover
       text-decoration: none
