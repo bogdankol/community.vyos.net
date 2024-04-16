@@ -1,6 +1,6 @@
 .PHONY: site
 site:
-	soupault ${SOUPAULT_OPTS}
+	./soupault ${SOUPAULT_OPTS}
 
 .PHONY: css
 css:

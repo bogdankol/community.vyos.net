@@ -1,7 +1,6 @@
 @import ../settings
 
 section.banner
-  background-size: cover
   background-color: $grey-light2
   display: flex
   justify-content: center
@@ -9,13 +8,13 @@ section.banner
   overflow: hidden
   +resolution(0, 575)
     height: 386px
-    padding: 100px 0 0
+    padding-top: 100px
   +resolution(576, 991)
     height: 433px
-    padding: 110px 0 0
+    padding-top: 110px
   +resolution(992)
     height: 459px
-    padding: 74px 0 0
+    padding-top: 74px     
     align-items: center
 
   .containerCustom
@@ -67,11 +66,10 @@ section.banner
           max-width: 680px
         +resolution(575, 991)
           max-width: 709px
-        +resolution(0, 575)
-          max-width: 335px
 
       .text
         font-family: $a
         font-weight: 600
         letter-spacing: $px
         color: $grey-normal
+        margin-top: 16px

@@ -10,6 +10,9 @@
 @import front-page/navigation.sass
 @import containerCustom.sass
 @import front-page/canvas.sass
+@import ./get-page/main.sass
+@import content-div
+@import ./contribute-page/main.sass
 
 body
   font-family: $r
@@ -55,33 +58,3 @@ p
 pre, code, sample
   white-space: pre-wrap
   hyphens: none
-
-#content
-
-  ul
-    list-style: none
-    +resp(sm)
-      padding-left: 25px
-    +resp(esm)
-      padding-left: 15px
-
-    li
-      padding-left: 25px
-      margin: 16px 0
-      line-height: 150%
-      +resp(esm)
-        font-size: 14px
-        margin: 13px 0
-
-      &:before
-        position: absolute
-        margin-top: 1px
-        margin-left: -25px
-        content: url('../img/global/list-element.svg')
-        +resp(esm)
-          margin-top: 2px
-
-  a
-    color: $primary
-    &:hover
-      text-decoration: none

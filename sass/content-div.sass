@@ -1,0 +1,112 @@
+@import settings
+
+.get-page,
+.contribute-page
+
+  .content-section
+    display: flex
+    align-items: center
+    flex-direction: column
+    +resolution(992)
+      padding: 40px 0 144px
+    +resolution(576, 991)
+      padding: 54px 0 64px
+    +resolution(0, 575)
+      padding: 32px 0 64px
+
+  .content-div
+    display: flex
+    flex-direction: column
+    +resolution(0, 575)
+      padding: 0 20px
+    +resolution(576, 991)
+      padding: 0 15px
+    +resolution(0, 991)
+      max-width: 738px
+    +resolution(992)
+      max-width: 810px
+
+    > div:first-of-type
+
+      h2
+        margin-top: 0 !important
+
+    h2
+      font-size: 22px
+      letter-spacing: $em
+      +resolution(576)
+        margin-top: 40px
+      +resolution(0, 575)
+        margin-top: 32px
+
+    h3
+      letter-spacing: $px
+      color: $grey-dark
+      line-height: 1.6
+      font-family: $r
+      margin-top: 16px
+      +resolution(576)
+        font-size: 18px
+      +resolution(0, 575)
+        font-size: 16px
+
+    .nightly-builds,
+    .lts,
+    .legacy-lts,
+    .why-contribute,
+    .start
+
+      p
+        line-height: 1.6
+        letter-spacing: $px
+        color: $grey-dark
+        &:nth-child(1n+2)
+          margin-top: 15px
+        &:nth-of-type(1)
+          margin-top: 10px
+
+        +resolution(0, 575)
+          font-size: 16px
+        +resolution(576)
+          font-size: 18px
+
+      ul
+        list-style: none
+        padding-left: 0
+        margin-top: 16px
+
+        li
+          position: relative
+          padding-left: 25px
+          font-weight: 500
+          color: $grey-dark
+          letter-spacing: $px
+          +resolution(0, 575)
+            font-size: 16px
+          +resolution(576)
+            font-size: 18px
+
+          &:not(&:last-child)
+            margin-bottom: 10px
+
+          &:before
+            position: absolute
+            top: 50%
+            left: 10px
+            transform: translate(-50%, -50%)
+            content: ''
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 50%
+            width: 5px
+            height: 5px
+            background-color: $grey-dark
+
+      a
+        color: $primary
+        +resolution(0, 575)
+          text-decoration: none
+
+        &:hover
+          text-decoration: none
