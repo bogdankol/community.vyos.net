@@ -1,19 +1,22 @@
 @import settings.sass
-@import header.sass
-@import ./front-page/banner.sass
-@import front-page/main-text.sass
-@import front-page/inform-columns.sass
-@import front-page/bottom-text.sass
-@import forms.sass
-@import footer.sass
-@import google-analytics-message.sass
-@import front-page/navigation.sass
-@import containerCustom.sass
-@import front-page/canvas.sass
-@import ./get-page/main.sass
+@import header
+@import ./front-page/banner
+@import front-page/main-text
+@import front-page/inform-columns
+@import front-page/bottom-text
+@import forms
+@import footer
+@import google-analytics-message
+@import front-page/navigation
+@import containerCustom
+@import front-page/canvas
+@import ./get-page/main
 @import content-div
-@import ./contribute-page/main.sass
-@import ./nightly-builds-page/main.sass
+@import ./contribute-page/main
+@import ./nightly-builds-page/main
+@import ./contributor-subs-page/main
+@import lists
+@import footnotes
 
 body
   font-family: $r
@@ -56,6 +59,34 @@ p
   @supports (hyphens: auto)
     hyphens: auto
 
-pre, code, sample
+pre
   white-space: pre-wrap
-  hyphens: none
+
+  code, 
+  sample
+    hyphens: none
+    line-height: 1.7
+    word-wrap: break-word
+    padding: 4px 6px
+    background-color: $grey-light2
+    border-radius: 4px
+    border: 1px solid $grey-light
+    +resolution(576)
+      font-size: 16px
+    +resolution(0, 575)
+      font-size: 14px
+
+p
+  code,
+  sample
+    hyphens: none
+    line-height: 1.7
+    word-wrap: break-word
+    padding: 4px 6px
+    background-color: $grey-light2
+    border-radius: 4px
+    border: 1px solid $grey-light
+    +resolution(576)
+      font-size: 14px
+    +resolution(0, 575)
+      font-size: 13px

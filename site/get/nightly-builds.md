@@ -12,6 +12,15 @@
 
   # VyOS nightly builds
 
+  </div>
+
+  </div>
+  </section>
+
+  <section class='content-section'>
+    <div class='content-div'>
+      <div class='image-signatures'>
+  
   VyOS nightly builds are automatically produced from the `current` branch and the development branch for the LTS release,
   at least once a day.
   They include all the latest code from maintainers and community contributors.
@@ -21,15 +30,6 @@
   for each build ensuring that basic functionality is working. In addition we load arbitrary
   [configurations](https://github.com/vyos/vyos-1x/tree/current/smoketest/configs) to ensure
   there are no errors during config migration and system bootup.
-
-  </div>
-
-  </div>
-  </section>
-
-  <section class='content-section'>
-    <div class='content-div'>
-      <div class='image-signatures'>
 
   ## Verifying image signatures
 
@@ -52,7 +52,7 @@
 
   </div>
 
-  <div class='available-builds' id='content'>
+  <div class='available-builds' id='available-builds'>
 
   ## Available builds
 
