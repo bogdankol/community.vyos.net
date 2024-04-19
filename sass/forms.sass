@@ -1,42 +1,41 @@
 @import settings
 
 div.hbspt-form
-  background-image: url(../img/forms/bg.svg)
-  padding-top: 25px
-  padding-bottom: 70px
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.12)
+  -moz-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.12)
+  box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.12)
+  border-radius: 8px
+  
   margin-top: 50px
   margin-bottom: 70px
-  +resp(sm)
-    padding-bottom: 50px
-    padding-top: 15px
-  +resp(esm)
-    margin-top: 30px
-    margin-bottom: 50px
-
-  h1, h2, h3, h4, h5, h6
-    color: $white
-    text-align: center
+  +resolution(576)
+    padding: 40px 65px
+  +resolution(0, 575)
+    padding: 32px 20px
 
   h2
-    +resp(sm)
+    +resolution(576)
       margin-bottom: 12px !important
 
+    span
+      color: $black !important
+
   form
-    max-width: 800px
+    max-width: 945px
     margin-left: auto
     margin-right: auto
-    +resp(md)
+    +resolution(576, 991)
       max-width: 100%
       padding-left: 50px
       padding-right: 50px
-    +resp(esm)
+    +resolution(0, 575)
       padding-left: 30px
       padding-right: 30px
 
     > fieldset
       max-width: 100%
       margin-bottom: 20px
-      +resp(sm)
+      +resolution(576, 991)
         margin-bottom: 15px
 
       > div
@@ -61,7 +60,7 @@ div.hbspt-form
             width: 100% !important
             color: $form-fields
             font-size: 16px
-            +resp(sm)
+            +resolution(576, 991)
               font-size: 14px
 
             &.invalid
@@ -70,7 +69,7 @@ div.hbspt-form
           input
             height: 46px
             padding: 0 15px
-            +resp(sm)
+            +resolution(576, 991)
               height: 41px
 
           textarea
@@ -78,7 +77,7 @@ div.hbspt-form
             padding: 12px 15px
             resize: none
             line-height: 140%
-            +resp(sm)
+            +resolution(576, 991)
               height: 53px
 
         > ul.hs-error-msgs
@@ -90,7 +89,7 @@ div.hbspt-form
             padding: 0 !important
             margin: 7px 0 0 !important
             font-size: 14px
-            +resp(sm)
+            +resolution(576, 991)
               margin-top: 5px !important
 
             &:before
@@ -99,34 +98,34 @@ div.hbspt-form
       &.form-columns-2
         display: flex
         justify-content: space-between
-        +resp(sm)
+        +resolution(576, 991)
           flex-direction: column
 
         > div
           float: none !important
           width: calc(50% - 10px) !important
-          +resp(sm)
+          +resolution(576, 991)
             width: 100% !important
 
           &:first-child
-            +resp(sm)
+            +resolution(576, 991)
               margin-bottom: 15px
 
       &.form-columns-3
         display: flex
         justify-content: space-between
-        +resp(sm)
+        +resolution(576, 991)
           flex-direction: column
 
         > div
           float: none !important
           width: calc(33.33% - 13px) !important
-          +resp(sm)
+          +resolution(576, 991)
             width: 100% !important
             margin-bottom: 15px
 
             &:last-child
-              +resp(sm)
+              +resolution(576, 991)
                 margin-bottom: 0
 
     > div.hs_recaptcha
@@ -150,9 +149,9 @@ div.hbspt-form
           cursor: pointer
           border: 1px solid $orange
           transition: 0.3s
-          +resp(sm)
+          +resolution(576, 991)
             height: 50px
-          +resp(esm)
+          +resolution(0, 575)
             width: 100%
 
           &:hover
