@@ -5,7 +5,7 @@ div.hbspt-form
   -moz-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.12)
   box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.12)
   border-radius: 8px
-  
+
   margin-top: 50px
   margin-bottom: 70px
   +resolution(576)
@@ -26,11 +26,6 @@ div.hbspt-form
     margin-right: auto
     +resolution(576, 991)
       max-width: 100%
-      padding-left: 50px
-      padding-right: 50px
-    +resolution(0, 575)
-      padding-left: 30px
-      padding-right: 30px
 
     > fieldset
       max-width: 100%
@@ -69,6 +64,8 @@ div.hbspt-form
           input
             height: 46px
             padding: 0 15px
+            border-radius: 4px
+            border: 1px solid $grey-light4
             +resolution(576, 991)
               height: 41px
 
@@ -157,6 +154,13 @@ div.hbspt-form
           &:hover
             background-color: $white
 
+.hs-error-msgs
+  display: none !important
+
+.input
+  input.error
+    border-width: 1px !important
+
 .form-footer
   border-radius: 8px
   background-color: $grey-dark
@@ -212,9 +216,6 @@ div.hbspt-form
       +resolution(576, 991)
         grid-template-columns: 3fr 1fr
         grid-column-gap: 10px
-
-      .hs-error-msgs
-        display: none !important
 
       .hs_email
         +resolution(992)
