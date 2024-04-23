@@ -1,6 +1,16 @@
 @import settings
 
-.get-page,
+
+.get-page
+
+  .content-section
+    +resolution(992)
+      padding-top: 40px
+    +resolution(576, 991)
+      padding-top: 54px
+    +resolution(0, 575)
+      padding-top: 32px
+
 .contribute-page
 
   .content-section

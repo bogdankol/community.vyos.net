@@ -40,13 +40,46 @@
   - want to check whether a bug is fixed in the latest code
   - made a patch and want to test it before making a pull request
 
-You can also build an LTS image from the source.
+  Go to the [nightly builds page](/get/nightly-builds).
 
   </div>
 
-As a courtesy, we offer images of legacy LTS releases. To access all available legacy LTS releases, kindly complete the form below. Upon submission, you will receive an email containing links to download the images.
+  <div class='lts'>
 
-<div id="application-form">
+  ## LTS release
+
+  Prebuilt LTS release images are available to people and companies who help us move the project
+  forward.
+
+  There are many ways to get access:
+
+  - Purchase a [software access subscription](https://vyos.io/subscriptions/software/).
+  - Get free access with a [support subscription](https://vyos.io/subscriptions/support/).
+  - Apply for a free subscription as a [contributor](/get/contributor-subscriptions).
+  - Apply for a free subscription as an
+    [educational instutution](https://vyos.io/community/for-educational-institutions/),
+    [non-profit](https://vyos.io/community/for-non-commercial-organizations/), or an
+    [emergency service](http://vyos.io/community/for-first-responders/).
+
+  Or you can build an LTS image from source.
+
+  </div>
+
+  <div class='legacy-lts'>
+
+  ## Legacy LTS releases
+
+  As a courtesy, we offer images of legacy LTS releases. To access all available legacy LTS releases, kindly complete the form below. Upon submission, you will receive an email containing links to download the images.
+
+  </div>
+
+  </div>
+
+  </section>
+
+  <section class='form'>
+    <div class='containerCustom'>
+      <div id="application-form" class='application-form'>
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
 <script>
@@ -57,4 +90,12 @@ As a courtesy, we offer images of legacy LTS releases. To access all available l
   });
 </script>
 
+  </div>
+  </div>
+
+  </section>
+
 </div>
+
+
+
