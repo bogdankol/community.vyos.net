@@ -49,7 +49,7 @@
 
   <section class='form'>
     <div class='containerCustom'>
-      <div id="application-form">
+      <div id="application-form" class='application-form'>
 
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
 <script>

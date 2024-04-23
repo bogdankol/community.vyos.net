@@ -3,7 +3,6 @@ $white: #FFFFFF
 $orange: #FFBE12
 $black: #121010
 $grey: #747577
-$form-fields: #666666
 $primary: #FD8F01
 $secondary: #FFAE12
 $grey-light: #E1E4E5
@@ -25,40 +24,6 @@ $em: -0.02em
 $px: -0.5px
 
 // mixins
-@mixin resp($media)
-	// 1200px and up
-	@if $media == xlg
-		@media only screen and (min-width: 1200px)
-			@content
-	// 1400px and down
-	@if $media == elg
-		@media only screen and (max-width: 1400px)
-			@content
-	// 1199px and down
-	@if $media == lg
-		@media only screen and (max-width: 1199px)
-			@content
-	// 991px and down
-	@if $media == md
-		@media only screen and (max-width: 991px)
-			@content
-	// 767px and down
-	@if $media == sm
-		@media only screen and (max-width: 767px)
-			@content
-	// 575px and down
-	@if $media == esm
-		@media only screen and (max-width: 575px)
-			@content
-	// 450px and down
-	@if $media == usm
-		@media only screen and (max-width: 450px)
-			@content
-	// 375px and down
-	@if $media == xsm
-		@media only screen and (max-width: 375px)
-			@content
-
 @mixin resolution($minSize, $maxSize: false)
 
 	@if $minSize and $maxSize

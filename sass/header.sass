@@ -47,6 +47,7 @@ header
       display: flex
       align-items: center
       height: 24px
+      transition: color 250ms linear
       +resolution(576, 991)
         font-size: 13px
         margin-right: 10px
@@ -56,7 +57,13 @@ header
       +resolution(0, 575)
         font-size: 18px
 
+      &:hover
+        color: $primary
+
       &:last-child
+        &:hover
+          span
+            color: $primary
 
         img
           +resolution(576)
@@ -68,6 +75,7 @@ header
           font-family: $a
           font-weight: 700
           letter-spacing: $em
+          transition: color 250ms linear
 
         &::before
           content: ''
