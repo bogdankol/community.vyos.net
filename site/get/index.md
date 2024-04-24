@@ -42,7 +42,7 @@
 
   Go to the [nightly builds page](/get/nightly-builds).
 
-## Legacy LTS releases
+  </div>
 
   <div class='lts'>
 
