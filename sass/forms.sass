@@ -14,7 +14,7 @@
 input
   
   &.error
-    outline: 2px solid $red !important
+    outline: 1px solid $red !important
     border: none !important
 
 div.hbspt-form
@@ -147,17 +147,17 @@ div.hbspt-form
       &.form-columns-2
         display: flex
         justify-content: space-between
-        +resolution(576, 991)
+        +resolution(0, 760)
           flex-direction: column
 
         > div
           float: none !important
           width: calc(50% - 10px) !important
-          +resolution(576, 991)
+          +resolution(0, 760)
             width: 100% !important
 
           &:first-child
-            +resolution(576, 991)
+            +resolution(0, 760)
               margin-bottom: 15px
 
       &.form-columns-3
