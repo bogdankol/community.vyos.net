@@ -6,7 +6,7 @@ header
   left: 0
   z-index: 11
 
-  .header__logo-side
+  .logo
     display: flex
     align-items: center
 
@@ -19,11 +19,11 @@ header
       +resolution(0, 991)
         display: none
 
-    .header__logo
+    a
       +resolution(992)
         margin-right: 20px
 
-  div.header__inner
+  .header
     display: flex
     justify-content: space-between
     align-items: center
@@ -32,7 +32,7 @@ header
     +resolution(0, 575)
       border-bottom: 1px solid $grey-light
 
-  .header__links-side
+  .links
     display: flex
     align-items: center
     +resolution(0, 575)
@@ -86,7 +86,7 @@ header
           +resolution(576)
             margin-right: 20px
 
-.mobile-menu-div
+.mobile-menu
   +resolution(576)
     display: none
 

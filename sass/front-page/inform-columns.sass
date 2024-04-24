@@ -4,72 +4,14 @@ section.inform-columns
   display: flex
   justify-content: center
 
-  div.inform-column__inner
+  .inner-div
     display: grid
     grid-template-columns: 1fr 1fr
     grid-gap: 30px
     +resolution(0, 991)
       grid-template-columns: 1fr
 
-    div.inform-column__item:nth-child(odd)
-      &::before
-        content: ""
-        position: absolute
-        top: 0
-        left: 0
-        background-color: $white
-        clip-path: polygon(0 0, 0 100%, 100% 0)
-        +resolution(576)
-          width: 40px
-          height: 40px
-        +resolution(0, 575)
-          width: 20px
-          height: 20px
-
-      &::after
-        content: ""
-        position: absolute
-        bottom: 0
-        right: 0
-        background-color: $white
-        clip-path: polygon(100% 100%, 0 100%, 100% 0)
-        +resolution(576, 992)
-          width: 40px
-          height: 40px
-        +resolution(0, 575)
-          width: 20px
-          height: 20px
-
-    div.inform-column__item:nth-child(2n)
-      &::before
-        content: ""
-        position: absolute
-        top: 0
-        left: 0
-        background-color: $white
-        clip-path: polygon(0 0, 0 100%, 100% 0)
-        +resolution(576)
-          width: 40px
-          height: 40px
-        +resolution(0, 575)
-          width: 20px
-          height: 20px
-
-      &::after
-        content: ""
-        position: absolute
-        bottom: 0
-        right: 0
-        background-color: $white
-        clip-path: polygon(100% 100%, 0 100%, 100% 0)
-        +resolution(576)
-          width: 40px
-          height: 40px
-        +resolution(0, 575)
-          width: 20px
-          height: 20px
-
-    div.inform-column__item
+    .item
       background: $light
       position: relative
       display: grid
@@ -79,11 +21,74 @@ section.inform-columns
       +resolution(0, 575)
         padding: 30px 20px
 
-      div.inform-column__header
+      &:nth-child(odd)
+        &::before
+          content: ""
+          position: absolute
+          top: 0
+          left: 0
+          background-color: $white
+          clip-path: polygon(0 0, 0 100%, 100% 0)
+          +resolution(576)
+            width: 40px
+            height: 40px
+          +resolution(0, 575)
+            width: 20px
+            height: 20px
+
+        &::after
+          content: ""
+          position: absolute
+          bottom: 0
+          right: 0
+          background-color: $white
+          clip-path: polygon(100% 100%, 0 100%, 100% 0)
+          +resolution(576, 992)
+            width: 40px
+            height: 40px
+          +resolution(0, 575)
+            width: 20px
+            height: 20px
+
+      &:nth-child(2n)
+        &::before
+          content: ""
+          position: absolute
+          top: 0
+          left: 0
+          background-color: $white
+          clip-path: polygon(0 0, 0 100%, 100% 0)
+          +resolution(576)
+            width: 40px
+            height: 40px
+          +resolution(0, 575)
+            width: 20px
+            height: 20px
+
+        &::after
+          content: ""
+          position: absolute
+          bottom: 0
+          right: 0
+          background-color: $white
+          clip-path: polygon(100% 100%, 0 100%, 100% 0)
+          +resolution(576)
+            width: 40px
+            height: 40px
+          +resolution(0, 575)
+            width: 20px
+            height: 20px
+
+      .header
         display: flex
         flex-direction: column
 
-        div.inform-column__title
+        img 
+          width: 54px
+          height: 54px
+
+        div
+
           h3
             font-weight: bold
             letter-spacing: $em
@@ -94,7 +99,7 @@ section.inform-columns
             +resolution(0, 991)
               font-size: 20px
 
-      div.inform-column__data
+      .content
         +resolution(992)
           margin: 24px 0
         +resolution(0, 991)
@@ -104,9 +109,9 @@ section.inform-columns
           text-align: left
           font-size: 16px
           +resolution(992)
-            margin-bottom: 30px
-          +resolution(0, 991)
             margin-bottom: 20px
+          +resolution(0, 991)
+            margin-bottom: 15px
           &:last-child
             margin-bottom: 0
 
